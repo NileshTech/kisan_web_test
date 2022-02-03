@@ -1,0 +1,59 @@
+<!DOCTYPE html>
+<html>
+<head>
+    <meta name="viewport" content="width=device-width, initial-scale=1">
+    <style>
+.loader {
+  margin: 0;
+  position: absolute;
+  top: 50%;
+  left: 45%;
+  border: 16px solid #008940;
+  border-radius: 30%;
+  border-top: 16px solid #008940;
+  width: 80px;
+  height: 80px;
+  -webkit-animation: spin 2s linear infinite; /* Safari */
+  animation: spin 2s linear infinite;
+}
+
+/* Safari */
+@-webkit-keyframes spin {
+  0% { -webkit-transform: rotate(0deg); }
+  100% { -webkit-transform: rotate(360deg); }
+}
+
+@keyframes spin {
+  0% { transform: rotate(0deg); }
+  100% { transform: rotate(360deg); }
+}
+</style>
+</head>
+<body onload="getLocation()">
+
+<p id="demo"></p>
+
+<div class="loader" ></div>
+
+<script>
+
+function getLocation() {
+ if (navigator.geolocation) {
+    navigator.geolocation.getCurrentPosition(showPosition);
+  } else {
+     window.parent.postMessage("MODAL_CLOSED","*");
+  }
+}
+
+function showPosition(position) {
+
+   window.parent.postMessage({
+                        status: "SUCCESS",
+                        latitude: position.coords.latitude,
+                        longitude:  position.coords.longitude,
+                    });
+}
+</script>
+
+</body>
+</html>
