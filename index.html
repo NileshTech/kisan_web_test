@@ -1,131 +1,3 @@
-<!--<!DOCTYPE html>-->
-<!--<html>-->
-<!--<head>-->
-<!--  &lt;!&ndash;-->
-<!--    If you are serving your web app in a path other than the root, change the-->
-<!--    href value below to reflect the base path you are serving from.-->
-
-<!--    The path provided below has to start and end with a slash "/" in order for-->
-<!--    it to work correctly.-->
-
-<!--    Fore more details:-->
-<!--    * https://developer.mozilla.org/en-US/docs/Web/HTML/Element/base-->
-<!--  &ndash;&gt;-->
-<!--  <base href="/">-->
-
-<!--  <meta charset="UTF-8">-->
-<!--  <meta content="IE=Edge" http-equiv="X-UA-Compatible">-->
-<!--  <meta name="description" content="Hello Flutter">-->
-
-<!--  &lt;!&ndash; iOS meta tags & icons &ndash;&gt;-->
-<!--  <meta name="apple-mobile-web-app-capable" content="yes">-->
-<!--  <meta name="apple-mobile-web-app-status-bar-style" content="black">-->
-<!--  <meta name="apple-mobile-web-app-title" content="KISAN">-->
-<!--  <link rel="apple-touch-icon" href="icons/Icon-192.png">-->
-
-<!--  &lt;!&ndash; Favicon &ndash;&gt;-->
-<!--  <link rel="icon" type="image/png" href="favicon.png"/>-->
-
-<!--  <title>KISAN</title>-->
-<!--  <link rel="manifest" href="manifest.json">-->
-<!--  <meta name="google-signin-client_id" content="799381838308-a3u082djeh350q0fqh3iet78sf3al4nr.apps.googleusercontent.com">-->
-<!--</head>-->
-<!--<body>-->
-
-<!--<script src="https://www.gstatic.com/firebasejs/8.6.1/firebase-app.js"></script>-->
-<!--<script src="https://www.gstatic.com/firebasejs/8.6.1/firebase-messaging.js"></script>-->
-<!--<script>-->
-<!--    // Your web app's Firebase configuration-->
-<!--    var firebaseConfig = {-->
-<!--      apiKey: "AIzaSyCmZL0C_o9RRTgyDaZO0DY78yr9fGuAdTQ",-->
-<!--      authDomain: "kisanchat-hinjawadi-dev.firebaseapp.com",-->
-<!--      databaseURL: "https://kisanchat-hinjawadi-dev.firebaseio.com",-->
-<!--      projectId: "kisanchat-hinjawadi-dev",-->
-<!--      storageBucket: "kisanchat-hinjawadi-dev.appspot.com",-->
-<!--      messagingSenderId: "379951119240",-->
-<!--      appId: "1:379951119240:web:f420f059597994a716983d",-->
-<!--      measurementId: "G-MN3BX52SXX"-->
-<!--    };-->
-<!--  // Initialize Firebase-->
-<!--  firebase.initializeApp(firebaseConfig);-->
-<!--  </script>-->
-<!--<script src="main.dart.js" type="application/javascript"></script>-->
-<!--<script>-->
-<!--    var serviceWorkerVersion = '2077161982';-->
-<!--    var scriptLoaded = false;-->
-<!--    function loadMainDartJs() {-->
-<!--      if (scriptLoaded) {-->
-<!--        return;-->
-<!--      }-->
-<!--      scriptLoaded = true;-->
-<!--      var scriptTag = document.createElement('script');-->
-<!--      scriptTag.src = 'main.dart.js';-->
-<!--      scriptTag.type = 'application/javascript';-->
-<!--      document.body.append(scriptTag);-->
-<!--    }-->
-
-<!--    if ('serviceWorker' in navigator) {-->
-<!--      // Service workers are supported. Use them.-->
-<!--      window.addEventListener('load', function () {-->
-<!--        //register firebase-messaging service worker-->
-<!--        navigator.serviceWorker.register("/firebase-messaging-sw.js");-->
-<!--        // Wait for registration to finish before dropping the <script> tag.-->
-<!--        // Otherwise, the browser will load the script multiple times,-->
-<!--        // potentially different versions.-->
-<!--        var serviceWorkerUrl = 'flutter_service_worker.js?v=' + serviceWorkerVersion;-->
-
-<!--        navigator.serviceWorker.register(serviceWorkerUrl)-->
-<!--          .then((reg) => {-->
-<!--            function waitForActivation(serviceWorker) {-->
-<!--              serviceWorker.addEventListener('statechange', () => {-->
-<!--                if (serviceWorker.state == 'activated') {-->
-<!--                  console.log('Installed new service worker.');-->
-<!--                  loadMainDartJs();-->
-<!--                }-->
-<!--              });-->
-<!--            }-->
-<!--            if (!reg.active && (reg.installing || reg.waiting)) {-->
-<!--              // No active web worker and we have installed or are installing-->
-<!--              // one for the first time. Simply wait for it to activate.-->
-<!--              waitForActivation(reg.installing ?? reg.waiting);-->
-<!--            } else if (!reg.active.scriptURL.endsWith(serviceWorkerVersion)) {-->
-<!--              // When the app updates the serviceWorkerVersion changes, so we-->
-<!--              // need to ask the service worker to update.-->
-<!--              console.log('New service worker available.');-->
-<!--              reg.update();-->
-<!--              waitForActivation(reg.installing);-->
-<!--            } else {-->
-<!--              // Existing service worker is still good.-->
-<!--              console.log('Loading app from service worker.');-->
-<!--              loadMainDartJs();-->
-<!--            }-->
-<!--          });-->
-
-<!--        // If service worker doesn't succeed in a reasonable amount of time,-->
-<!--        // fallback to plaint <script> tag.-->
-<!--        setTimeout(() => {-->
-<!--          if (!scriptLoaded) {-->
-<!--            console.warn(-->
-<!--              'Failed to load app from service worker. Falling back to plain <script> tag.',-->
-<!--            );-->
-<!--            loadMainDartJs();-->
-<!--          }-->
-<!--        }, 4000);-->
-<!--      });-->
-<!--    } else {-->
-<!--      // Service workers not supported. Just drop the <script> tag.-->
-<!--      loadMainDartJs();-->
-<!--    }-->
-<!--  </script>-->
-<!--<script src="main.dart.js" type="application/javascript"></script>-->
-<!--<script src="//cdnjs.cloudflare.com/ajax/libs/pdf.js/2.4.456/pdf.min.js"></script>-->
-<!--<script type="text/javascript">-->
-<!--   pdfjsLib.GlobalWorkerOptions.workerSrc = "//cdnjs.cloudflare.com/ajax/libs/pdf.js/2.4.456/pdf.worker.min.js";-->
-<!--</script>-->
-<!--</body>-->
-<!--</html>-->
-
-
 <!DOCTYPE html>
 <html>
 
@@ -137,120 +9,125 @@
     The path provided below has to start and end with a slash "/" in order for
     it to work correctly.
 
-    Fore more details:
+    For more details:
     * https://developer.mozilla.org/en-US/docs/Web/HTML/Element/base
+
+    This is a placeholder for base href that will be replaced by the value of
+    the `--base-href` argument provided to `flutter build`.
   -->
   <base href="/kisan_web_test/">
 
   <meta charset="UTF-8">
   <meta content="IE=Edge" http-equiv="X-UA-Compatible">
-  <meta name="description" content="now available on the web.">
+  <meta name="description" content="A new Flutter project.">
 
   <!-- iOS meta tags & icons -->
   <meta name="apple-mobile-web-app-capable" content="yes">
   <meta name="apple-mobile-web-app-status-bar-style" content="black">
-  <meta name="apple-mobile-web-app-title" content="KISAN">
+  <meta name="apple-mobile-web-app-title" content="kisan_web_3">
   <link rel="apple-touch-icon" href="icons/Icon-192.png">
 
   <!-- Favicon -->
   <link rel="icon" type="image/png" href="favicon.png" />
 
   <title>KISAN</title>
+  <style>
+    body {
+      background-color: #008940;
+    }
+  </style>
   <link rel="manifest" href="manifest.json">
-  <meta name="google-signin-client_id"
-    content="143325684355-sjmtmsj8rpj73q1pon9qnf3gcmcu2dft.apps.googleusercontent.com">
+
+  <script>
+    // The value below is injected by flutter build, do not touch.
+    var serviceWorkerVersion = '3072043497';
+  </script>
+  <!-- This script adds the flutter initialization JS code -->
+  <script src="flutter.js" defer></script>
 </head>
 
 <body>
 
-  <script src="https://www.gstatic.com/firebasejs/8.6.1/firebase-app.js"></script>
-  <script src="https://www.gstatic.com/firebasejs/8.6.1/firebase-messaging.js"></script>
-  <script>
-    // Your web app's Firebase configuration
-    var firebaseConfig = {
-      apiKey: "AIzaSyAtAwiO1IKnunCwvqGA8uNDPAcdspkemqg",
-      authDomain: "kisanchat-prod.firebaseapp.com",
-      databaseURL: "https://kisanchat-prod.firebaseio.com",
-      projectId: "kisanchat-prod",
-      storageBucket: "kisanchat-prod.appspot.com",
-      messagingSenderId: "143325684355",
-      appId: "1:143325684355:web:a098aa55c0b4bc472531b6"
-    };
-    // Initialize Firebase
-    firebase.initializeApp(firebaseConfig);
-  </script>
-  <script src="main.dart.js" type="application/javascript"></script>
-  <script>
-    var serviceWorkerVersion = null;
-    var scriptLoaded = false;
-    function loadMainDartJs() {
-      if (scriptLoaded) {
-        return;
+
+  <div id="loading">
+    <style>
+      body {
+        inset: 0;
+        overflow: hidden;
+        margin: 0;
+        padding: 0;
+        position: fixed;
       }
-      scriptLoaded = true;
-      var scriptTag = document.createElement('script');
-      scriptTag.src = 'main.dart.js';
-      scriptTag.type = 'application/javascript';
-      document.body.append(scriptTag);
-    }
 
-    if ('serviceWorker' in navigator) {
-      // Service workers are supported. Use them.
-      window.addEventListener('load', function () {
-        //register firebase-messaging service worker
-        navigator.serviceWorker.register("/firebase-messaging-sw.js");
-        // Wait for registration to finish before dropping the <script> tag.
-        // Otherwise, the browser will load the script multiple times,
-        // potentially different versions.
-        var serviceWorkerUrl = 'flutter_service_worker.js?v=' + serviceWorkerVersion;
+      #loading {
+        align-items: center;
+        display: flex;
+        height: 100%;
+        justify-content: center;
+        width: 100%;
+      }
 
-        navigator.serviceWorker.register(serviceWorkerUrl)
-          .then((reg) => {
-            function waitForActivation(serviceWorker) {
-              serviceWorker.addEventListener('statechange', () => {
-                if (serviceWorker.state == 'activated') {
-                  console.log('Installed new service worker.');
-                  loadMainDartJs();
-                }
-              });
-            }
-            if (!reg.active && (reg.installing || reg.waiting)) {
-              // No active web worker and we have installed or are installing
-              // one for the first time. Simply wait for it to activate.
-              waitForActivation(reg.installing ?? reg.waiting);
-            } else if (!reg.active.scriptURL.endsWith(serviceWorkerVersion)) {
-              // When the app updates the serviceWorkerVersion changes, so we
-              // need to ask the service worker to update.
-              console.log('New service worker available.');
-              reg.update();
-              waitForActivation(reg.installing);
-            } else {
-              // Existing service worker is still good.
-              console.log('Loading app from service worker.');
-              loadMainDartJs();
-            }
-          });
+      #loading img {
+        animation: 1s ease-in-out 0s infinite alternate breathe;
+        opacity: .66;
+        transition: opacity .4s;
+      }
 
-        // If service worker doesn't succeed in a reasonable amount of time,
-        // fallback to plaint <script> tag.
-        setTimeout(() => {
-          if (!scriptLoaded) {
-            console.warn(
-              'Failed to load app from service worker. Falling back to plain <script> tag.',
-            );
-            loadMainDartJs();
-          }
-        }, 4000);
+      #loading.main_done img {
+        opacity: 1;
+      }
+
+      #loading.init_done img {
+        animation: .33s ease-in-out 0s 1 forwards zooooom;
+        opacity: .05;
+      }
+
+      @keyframes breathe {
+        from {
+          transform: scale(1)
+        }
+
+        to {
+          transform: scale(0.95)
+        }
+      }
+
+      @keyframes zooooom {
+        from {
+          transform: scale(1)
+        }
+
+        to {
+          transform: scale(10)
+        }
+      }
+    </style>
+    <img src="https://kisan-app.s3.ap-south-1.amazonaws.com/Icon-192.png" alt="Loading indicator..." />
+  </div>
+
+  <script>
+    window.addEventListener('load', function (ev) {
+      // Download main.dart.js
+      var loading = document.querySelector('#loading');
+      _flutter.loader.loadEntrypoint({
+        serviceWorker: {
+          serviceWorkerVersion: serviceWorkerVersion,
+        }
+      }).then(function (engineInitializer) {
+        loading.classList.add('main_done');
+        return engineInitializer.initializeEngine();
+      }).then(function (appRunner) {
+        loading.classList.add('init_done');
+        return appRunner.runApp();
+      }).then(function (app) {
+        // Wait a few milliseconds so users can see the "zoooom" animation
+        // before getting rid of the "loading" div.
+        // window.setTimeout(function () {
+        //   loading.remove();
+        // }, 500);
+        loading.remove();
       });
-    } else {
-      // Service workers not supported. Just drop the <script> tag.
-      loadMainDartJs();
-    }
-  </script>
-  <script src="main.dart.js" type="application/javascript"></script>
-  <script src="//cdnjs.cloudflare.com/ajax/libs/pdf.js/2.12.313/pdf.min.js"></script>
-  <script type="text/javascript">
-    pdfjsLib.GlobalWorkerOptions.workerSrc = "//cdnjs.cloudflare.com/ajax/libs/pdf.js/2.12.313/pdf.worker.min.js";
+    });
   </script>
 </body>
 

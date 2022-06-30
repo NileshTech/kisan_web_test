@@ -1,0 +1,15 @@
+<svg id="Iconly_Bulk_Arrow_-_Right_3" data-name="Iconly/Bulk/Arrow - Right 3" xmlns="http://www.w3.org/2000/svg" xmlns:xlink="http://www.w3.org/1999/xlink" width="26.178" height="16.103" viewBox="0 0 26.178 16.103">
+  <defs>
+    <clipPath id="clip-path">
+      <path id="Clip_4" data-name="Clip 4" d="M0,0H16.1V11.306H0Z" fill="#2f1d00"/>
+    </clipPath>
+  </defs>
+  <g id="Arrow_-_Right_3" data-name="Arrow - Right 3" transform="translate(0 16.103) rotate(-90)">
+    <path id="Fill_1" data-name="Fill 1" d="M2.1.943V12.192a1,1,0,0,1-1.05.943A1,1,0,0,1,0,12.192V.943A1,1,0,0,1,1.05,0,1,1,0,0,1,2.1.943" transform="translate(7.002)" fill="#2f1d00" opacity="0.4"/>
+    <g id="Group_5" data-name="Group 5" transform="translate(0 11.249)">
+      <g id="Group_5-2" data-name="Group 5" transform="translate(0 3.623)" clip-path="url(#clip-path)">
+        <path id="Fill_3" data-name="Fill 3" d="M16.1.9a.811.811,0,0,1-.161.479l-7,9.508a1.15,1.15,0,0,1-1.778,0l-7-9.508A.787.787,0,0,1,.132.465,1.085,1.085,0,0,1,1.05,0h14a1.085,1.085,0,0,1,.918.465A.792.792,0,0,1,16.1.9" transform="translate(0)" fill="#2f1d00"/>
+      </g>
+    </g>
+  </g>
+</svg>
