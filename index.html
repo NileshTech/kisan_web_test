@@ -2,6 +2,62 @@
 <html>
 
 <head>
+  <!-- Google Tag Manager -->
+  <!-- <script>(function (w, d, s, l, i) {
+      w[l] = w[l] || []; w[l].push({
+        'gtm.start':
+          new Date().getTime(), event: 'gtm.js'
+      }); var f = d.getElementsByTagName(s)[0],
+        j = d.createElement(s), dl = l != 'dataLayer' ? '&l=' + l : ''; j.async = true; j.src =
+          'https://www.googletagmanager.com/gtm.js?id=' + i + dl; f.parentNode.insertBefore(j, f);
+    })(window, document, 'script', 'dataLayer', 'GTM-T2N4K5C');</script> -->
+  <!-- End Google Tag Manager -->
+
+
+  <!-- Facebook : Meta Pixel Code -->
+  <!-- <script>
+    !function (f, b, e, v, n, t, s) {
+      if (f.fbq) return; n = f.fbq = function () {
+        n.callMethod ?
+          n.callMethod.apply(n, arguments) : n.queue.push(arguments)
+      };
+      if (!f._fbq) f._fbq = n; n.push = n; n.loaded = !0; n.version = '2.0';
+      n.queue = []; t = b.createElement(e); t.async = !0;
+      t.src = v; s = b.getElementsByTagName(e)[0];
+      s.parentNode.insertBefore(t, s)
+    }(window, document, 'script',
+      'https://connect.facebook.net/en_US/fbevents.js');
+    fbq('init', '476977519404861');
+    fbq('track', 'PageView');
+    fbq('track', 'ViewContent');
+  </script>
+
+  <noscript><img height="1" width="1" style="display:none"
+      src="https://www.facebook.com/tr?id=476977519404861&ev=PageView&noscript=1" /></noscript> -->
+  <!-- Facebook : End Meta Pixel Code -->
+
+
+  <!-- Google tag (gtag.js) -->
+  <!-- <script async src="https://www.googletagmanager.com/gtag/js?id=AW-704132559"></script>
+  <script>
+    window.dataLayer = window.dataLayer || [];
+    function gtag() { dataLayer.push(arguments); }
+    gtag('js', new Date());
+
+    gtag('config', 'AW-704132559');
+  </script> -->
+
+
+  <!-- Event snippet for Visitor Registration conversion page -->
+  <!-- <script>
+    window.addEventListener('load', function () {
+      if (document.location.href.includes('ticketDetails')) {
+        gtag('event', 'conversion', { 'send_to': 'AW-704132559/WrKHCKXLrIkYEM_r4M8C' });
+      }
+    });
+  </script> -->
+  <!-- Google tag (gtag.js) end -->
+
   <!--
     If you are serving your web app in a path other than the root, change the
     href value below to reflect the base path you are serving from.
@@ -15,19 +71,17 @@
     This is a placeholder for base href that will be replaced by the value of
     the `--base-href` argument provided to `flutter build`.
   -->
-  <base href="/kisan_web_test/">
+  <base href="/" />
 
-  <meta charset="UTF-8">
-  <meta content="IE=Edge" http-equiv="X-UA-Compatible">
-  <meta name="description" content="A new Flutter project.">
-
-
+  <meta charset="UTF-8" />
+  <meta content="IE=Edge" http-equiv="X-UA-Compatible" />
+  <meta name="description" content="A new Flutter project." />
 
   <!-- iOS meta tags & icons -->
-  <meta name="apple-mobile-web-app-capable" content="yes">
-  <meta name="apple-mobile-web-app-status-bar-style" content="black">
-  <meta name="apple-mobile-web-app-title" content="kisan_web_3">
-  <link rel="apple-touch-icon" href="icons/Icon-192.png">
+  <meta name="apple-mobile-web-app-capable" content="yes" />
+  <meta name="apple-mobile-web-app-status-bar-style" content="black" />
+  <meta name="apple-mobile-web-app-title" content="hyd" />
+  <link rel="apple-touch-icon" href="icons/Icon-192.png" />
 
   <!-- Favicon -->
   <link rel="icon" type="image/png" href="favicon.png" />
@@ -37,25 +91,40 @@
   <script defer src="https://cdnjs.cloudflare.com/ajax/libs/exif-js/2.3.0/exif.js"></script>
   <script src="https://cdnjs.cloudflare.com/ajax/libs/croppie/2.6.5/croppie.min.js"></script>
 
-  <title>KISAN</title>
+  <!-- Google Sign-in -->
+  <meta name="google-signin-client_id"
+    content="799381838308-90gt5n7dqs3edam1q124hes9bjsk7s9u.apps.googleusercontent.com" />
+  <script src="https://apis.google.com/js/platform.js" async defer></script>
+
+  <title>hyd</title>
+  <link rel="manifest" href="manifest.json" />
+
+  <script>
+    // The value below is injected by flutter build, do not touch.
+    var serviceWorkerVersion = '2748524099';
+  </script>
+  <!-- This script adds the flutter initialization JS code -->
+  <script src="flutter.js" defer></script>
+  <!-- Google Tag Manager -->
+  <!-- <script>(function (w, d, s, l, i) {
+      w[l] = w[l] || []; w[l].push({
+        'gtm.start':
+          new Date().getTime(), event: 'gtm.js'
+      }); var f = d.getElementsByTagName(s)[0],
+        j = d.createElement(s), dl = l != 'dataLayer' ? '&l=' + l : ''; j.async = true; j.src =
+          'https://www.googletagmanager.com/gtm.js?id=' + i + dl; f.parentNode.insertBefore(j, f);
+    })(window, document, 'script', 'dataLayer', 'GTM-T2N4K5C');</script> -->
+  <!-- End Google Tag Manager -->
+</head>
+
+<body>
   <style>
     body {
       background-color: #008940;
     }
   </style>
-  <link rel="manifest" href="manifest.json">
 
-  <script>
-    // The value below is injected by flutter build, do not touch.
-    var serviceWorkerVersion = '1420613325';
-  </script>
-  <!-- This script adds the flutter initialization JS code -->
-  <script src="flutter.js" defer></script>
-</head>
-
-<body>
-
-
+  <!-- Loading indicator -->
   <div id="loading">
     <style>
       body {
@@ -76,8 +145,8 @@
 
       #loading img {
         animation: 1s ease-in-out 0s infinite alternate breathe;
-        opacity: .66;
-        transition: opacity .4s;
+        opacity: 0.66;
+        transition: opacity 0.4s;
       }
 
       #loading.main_done img {
@@ -85,57 +154,81 @@
       }
 
       #loading.init_done img {
-        animation: .33s ease-in-out 0s 1 forwards zooooom;
-        opacity: .05;
+        animation: 0.33s ease-in-out 0s 1 forwards zooooom;
+        opacity: 0.05;
       }
 
       @keyframes breathe {
         from {
-          transform: scale(1)
+          transform: scale(1);
         }
 
         to {
-          transform: scale(0.95)
+          transform: scale(0.95);
         }
       }
 
       @keyframes zooooom {
         from {
-          transform: scale(1)
+          transform: scale(1);
         }
 
         to {
-          transform: scale(10)
+          transform: scale(10);
         }
       }
     </style>
-    <img src="https://kisan-app.s3.ap-south-1.amazonaws.com/Icon-192.png" alt="Loading indicator..." />
+    <img src="icons/kisan.png" alt="Loading indicator..." />
   </div>
-
+  <!-- Google Tag Manager (noscript) -->
+  <!-- <noscript><iframe src="https://www.googletagmanager.com/ns.html?id=GTM-T2N4K5C" height="0" width="0"
+      style="display:none;visibility:hidden"></iframe></noscript> -->
+  <!-- End Google Tag Manager (noscript) -->
   <script>
-    window.addEventListener('load', function (ev) {
+    window.addEventListener("load", function (ev) {
       // Download main.dart.js
-      var loading = document.querySelector('#loading');
-      _flutter.loader.loadEntrypoint({
-        serviceWorker: {
-          serviceWorkerVersion: serviceWorkerVersion,
-        }
-      }).then(function (engineInitializer) {
-        loading.classList.add('main_done');
-        return engineInitializer.initializeEngine();
-      }).then(function (appRunner) {
-        loading.classList.add('init_done');
-        return appRunner.runApp();
-      }).then(function (app) {
-        // Wait a few milliseconds so users can see the "zoooom" animation
-        // before getting rid of the "loading" div.
-        // window.setTimeout(function () {
-        //   loading.remove();
-        // }, 500);
-        loading.remove();
-      });
+      var loading = document.querySelector("#loading");
+      _flutter.loader
+        .loadEntrypoint({
+          serviceWorker: {
+            serviceWorkerVersion: serviceWorkerVersion,
+          },
+        })
+        .then(function (engineInitializer) {
+          loading.classList.add("main_done");
+          return engineInitializer.initializeEngine();
+        })
+        .then(function (appRunner) {
+          loading.classList.add("init_done");
+          return appRunner.runApp();
+        });
     });
   </script>
+  <!-- LinkedIn Google tags -->
+  <!-- <script type="text/javascript">
+    _linkedin_partner_id = "120258";
+    window._linkedin_data_partner_ids = window._linkedin_data_partner_ids || [];
+    window._linkedin_data_partner_ids.push(_linkedin_partner_id);
+  </script>
+  <script type="text/javascript">
+    (function (l) {
+      if (!l) {
+        window.lintrk = function (a, b) { window.lintrk.q.push([a, b]) };
+        window.lintrk.q = []
+      }
+      var s = document.getElementsByTagName("script")[0];
+      var b = document.createElement("script");
+      b.type = "text/javascript"; b.async = true;
+      b.src = "https://snap.licdn.com/li.lms-analytics/insight.min.js";
+      s.parentNode.insertBefore(b, s);
+    })(window.lintrk);
+  </script>
+  <noscript>
+    <img height="1" width="1" style="display:none;" alt=""
+      src="https://px.ads.linkedin.com/collect/?pid=120258&fmt=gif" />
+  </noscript> -->
+  <!-- End of LinkedIn Google tags -->
+
 </body>
 
 </html>
