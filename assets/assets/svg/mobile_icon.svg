@@ -1,8 +1,0 @@
-<svg xmlns="http://www.w3.org/2000/svg" width="44" height="44" viewBox="0 0 44 44">
-  <g id="Group_10066" data-name="Group 10066" transform="translate(-39 -29)">
-    <g id="Group_225" data-name="Group 225" transform="translate(11 -7)">
-      <circle id="Ellipse_272" data-name="Ellipse 272" cx="22" cy="22" r="22" transform="translate(28 36)" fill="#1f8f4e"/>
-    </g>
-    <path id="ic_phone_android_24px" d="M16,1H8A3,3,0,0,0,5,4V20a3,3,0,0,0,3,3h8a3,3,0,0,0,3-3V4A3,3,0,0,0,16,1ZM14,21H10V20h4Zm3.25-3H6.75V4h10.5Z" transform="translate(49 39)" fill="#fff"/>
-  </g>
-</svg>
